@@ -1,4 +1,4 @@
-package co.uq.uniquindio.poo;
+package co.uq.uniquindio.pruebas;
 
 /**
  * Hello world!
