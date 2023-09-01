@@ -4,13 +4,7 @@ import javax.swing.JOptionPane;
 
 import co.uq.uniquindio.poo.Usuario;
 
-/**
- * @author Juanda
- * 
- */
 public class arrayLisOBjetos {
-    ArrayList <Usuario> ListaUsuarios = new ArrayList<Usuario>();
-
 public arrayLisOBjetos(){
     String nombre = JOptionPane.showInputDialog(null, "coloque el nombre");
     String ID = JOptionPane.showInputDialog(null, "coloque el id usuario");
@@ -24,6 +18,7 @@ public arrayLisOBjetos(){
 
 
 }
+private ArrayList <Usuario> ListaUsuarios = new ArrayList<Usuario>();
 public void agregar(Usuario user){
     ListaUsuarios.add(user);
 }
