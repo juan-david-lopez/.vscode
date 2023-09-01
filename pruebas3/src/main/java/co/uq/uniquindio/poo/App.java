@@ -12,5 +12,6 @@ public class App
         Cajero cajero= new Cajero(user1);
         System.out.println(cajero.getSaldo());
         System.out.println(cajero.getUsuario().toString());
+        
     }
 }
