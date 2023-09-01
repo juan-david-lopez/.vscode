@@ -1,5 +1,5 @@
 package co.uq.uniquindio.poo;
-
+import co.uq.uniquindio.poo.;
 /**
  * pruebas y quema de datos
  *
@@ -12,6 +12,6 @@ public class App
         Cajero cajero= new Cajero(user1);
         System.out.println(cajero.getSaldo());
         System.out.println(cajero.getUsuario().toString());
-        
+        arrayLisOBjetos objeto1= new arrayLisOBjetos();
     }
 }
