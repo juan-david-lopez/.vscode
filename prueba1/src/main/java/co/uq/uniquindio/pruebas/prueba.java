@@ -9,9 +9,9 @@ public class prueba {
     for(int i=0;i<num;i++){
     String tipoauto=JOptionPane.showInputDialog(null, "ingrese el tipo de auto").toUpperCase();
     String TipoLavado=(JOptionPane.showInputDialog(null, "ingrese el tipo de lavado").toUpperCase());
-    String placa= JOptionPane.showInputDialog(null, "ingrese el tipo de PLACA");
-    String nombre = JOptionPane.showInputDialog(null, "ingrese el tipo de NOMBRE");
-    String numeroContacto=JOptionPane.showInputDialog(null, "ingrese el tipo de NUMERO CONTACTO ");
+    String placa= JOptionPane.showInputDialog(null, "ingrese la PLACA");
+    String nombre = JOptionPane.showInputDialog(null, "ingrese el  NOMBRE");
+    String numeroContacto=JOptionPane.showInputDialog(null, "ingrese el NUMERO CONTACTO ");
     String emailcliente= JOptionPane.showInputDialog(null, "ingrese el tipo de EMAIL CLIENTE");
 
     Auto moto = new Auto();
@@ -21,7 +21,6 @@ public class prueba {
     moto.setNumeroContacto(numeroContacto);
     if(verificadorlavado(TipoLavado)){
         moto.setTipolavado(TipoLavado);
-        System.out.println(moto.getTipolavado());
     }
     if(verificarAuto(tipoauto)){
         moto.setTipoVehiculo(tipoauto);
