@@ -18,7 +18,7 @@ public class AppTest {
     private static final Logger LOG = Logger.getLogger(AppTest.class.getName());
 
     /**
-     * Rigorous Test :-)
+     * 
      */
     @Test
     public void shouldAnswerWithTrue() {
