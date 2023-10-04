@@ -1,4 +1,4 @@
-# torneo1
+# proyectofinaltorneo
 
 Descripciín basisca de su Proyecto de POO ...
 
@@ -37,5 +37,5 @@ Para generar el jar puede usar el comando:
 y para ejecutar el jar
 
 ```shell
- java -jar target/torneo1-1.0.jar
+ java -jar target/proyectofinaltorneo-1.0.jar
 ```

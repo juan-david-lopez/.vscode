@@ -4,8 +4,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>co.uq.uniquindio.proyectofinal</groupId>
-  <artifactId>torneo1</artifactId>
+  <groupId>uq.uniquindio.proyectotorneo</groupId>
+  <artifactId>proyectofinaltorneo</artifactId>
   <version>1.0</version>
 
   <properties>
