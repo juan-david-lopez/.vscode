@@ -32,14 +32,6 @@
           <version>3.11.0</version>
         </plugin>
         <plugin>
-    		<groupId>com.zenjava</groupId>
-   			<artifactId>javafx-maven-plugin</artifactId>
-    		<version>8.8.3</version>
-    		<configuration>
-        	<mainClass>co.edu.unquindio.poo.interfazUser..extends.javafx.Application</mainClass>
-    		</configuration>
-			</plugin>
-        <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.1.2</version>
         </plugin>

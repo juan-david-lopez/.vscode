@@ -1,6 +1,7 @@
 package co.edu.uniquindio.poo.Aplication;
 
 import javax.swing.JFrame;
+
 import co.edu.uniquindio.poo.interfazUser.pantallaInicio;
 
 /**
@@ -8,9 +9,11 @@ import co.edu.uniquindio.poo.interfazUser.pantallaInicio;
  *
  */
 public class App{
-
-  pantallaInicio ventana1 = new pantallaInicio();
-  pantallaInicio.setVisible
+	public void main (String args[]) {
+		
+	}
+  
+  
   
   
 }
