@@ -23,8 +23,17 @@ package co.unquindio.poo.logica;
 	public void setActivo(boolean activo) {
 		Activo = activo;
 	}
+	
+	public String getOtraCosa() {
+		return otraCosa;
+	}
+	public void setOtraCosa(String otraCosa) {
+		this.otraCosa = otraCosa;
+	}
+	
 	private String ID; 
 	private String NombreCompleto;
 	private String otraCosa;
+	
 	private boolean Activo;
 }
