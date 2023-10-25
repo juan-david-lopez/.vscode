@@ -1,5 +1,6 @@
 package co.unquindio.poo.logica;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 import co.edu.uniquindio.poo.Enum.EstadoTorneo;
@@ -13,12 +14,12 @@ public class LogicaGeneral {
 	public void registroJueces(String Id, String nombrecomplet) {
 		
 	}
-	public void agendarEnfrentamiento() {
+	public void agendarEnfrentamiento(LocalDate fechaInicio, LocalDate fechafinal, int numeroParticipantes, int edadMinima, int numeroMaxequipos) {
 		
 	}
-	public boolean estadoEnfrentamiento() {
+	public String estadoEnfrentamiento(Torneo torneo) {
 		
-		return false;
+		return null;
 		
 	}
 	public boolean ResultadoEnfrentamiento(String estado, boolean resultado) {
@@ -26,18 +27,19 @@ public class LogicaGeneral {
 		String estadotorn2=EstadoTorneo.ENJUEGO+"";
 		String estadotorn3=EstadoTorneo.FINALIZADO+"";
 		String estadotorn4=EstadoTorneo.PENDIENTE+"";
-		if(estado.equals(estadotorn1) && resultado) {
-			return false;
+		boolean centinela=false;
+		if(estado.equals(estadotorn3) && resultado) {
+			centinela=true;
 		}
-		else if(estado.equals(estadotorn2)) {
-			return ;
-		}
-		else if(estado.equals(estadotorn3)) {
-			return ;
+		else if(estado.equals(estadotorn1) || estado.equals(estadotorn2)
+				|| estado.equals(estadotorn4)){
+			centinela=false;
 		}
 		else {
-			return ;
+			centinela=false;
 		}
+		
+		return centinela;
 		
 	}
 	public ArrayList<String> listadoEnfrentamientosNombre(String nombreEquipo){
@@ -45,7 +47,7 @@ public class LogicaGeneral {
 		return null;
 		
 	}
-	public ArrayList<String> listadoEnfrentamientosJuez(String ID){
+	public ArrayList<String> listadoEnfrentamientosJuez(String IDJuez){
 		
 		return null;
 		

@@ -5,9 +5,16 @@ import java.util.ArrayList;
 public class EquipoJugadores {
 	private ArrayList<jugadoresC> participantes = new ArrayList<jugadoresC>();
 	private String nombreEquipo;
+	private jugadoresC capitanequipo;
 	
-	public EquipoJugadores(String nombreEquipo) {
+	public EquipoJugadores(String nombreEquipo, jugadoresC capitan) {
 		this.nombreEquipo=nombreEquipo;
+	}
+	public jugadoresC getCapitanequipo() {
+		return capitanequipo;
+	}
+	public void setCapitanequipo(jugadoresC capitanequipo) {
+		this.capitanequipo = capitanequipo;
 	}
 	public String getNombreEquipo() {
 		return nombreEquipo;
