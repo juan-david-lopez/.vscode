@@ -1,6 +1,7 @@
 package co.unquindio.poo.logica;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Torneo {
 	private String estadoTorneo;
@@ -11,8 +12,15 @@ public class Torneo {
 	private int limiteEdadparti;
 	private double valorInscripcion;
 	private enfrentamientos enfrentamiento;
-	public Torneo() {
-		
+	private ArrayList<enfrentamientos> enfrentados;
+	public Torneo(String estadoTorneo,String nombreTorneo,LocalDate fehcaInicio,LocalDate fechaFinal,int numeroMaxequipos,int limiteEdadparti, double valorInscripcion) {
+		this.estadoTorneo=estadoTorneo;
+		this.nombreTorneo=nombreTorneo;
+		this.fehcaInicio=fehcaInicio;
+		this.fechaFinal=fechaFinal;
+		this.numeroMaxequipos=numeroMaxequipos;
+		this.limiteEdadparti=limiteEdadparti;
+		this.valorInscripcion=valorInscripcion;
 	}
 	public double getValorInscripcion() {
 		return valorInscripcion;
@@ -70,5 +78,9 @@ public class Torneo {
 	}
 	public void setEnfrentamiento(enfrentamientos enfrentamiento) {
 		this.enfrentamiento = enfrentamiento;
+		enfrentados.add(enfrentamiento);
+	}
+	public ArrayList<enfrentamientos> getEnfrentados() {
+		return enfrentados;
 	}
 }

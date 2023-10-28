@@ -7,20 +7,21 @@ import co.edu.uniquindio.poo.Enum.EstadoTorneo;
 
 public class LogicaGeneral {
 	
-	public void crearTorneo() {
+	public void crearTorneo(String estadoTorneo,String nombreTorneo,String fehcaInicio,String fechaFinal,int numeroMaxequipos,int limiteEdadparti, double valorInscripcion) {
+		LocalDate fechaInicio=LocalDate.parse(fehcaInicio);
+		LocalDate fechaFinal1=LocalDate.parse(fechaFinal);
 		
+		Torneo torneo= new Torneo(estadoTorneo,nombreTorneo,fechaInicio,fechaFinal1,numeroMaxequipos,limiteEdadparti,valorInscripcion);
 	}
 	
 	public void registroJueces(String Id, String nombrecomplet) {
-		
+		jueces juez= new jueces(Id, nombrecomplet);
 	}
 	public void agendarEnfrentamiento(LocalDate fechaInicio, LocalDate fechafinal, int numeroParticipantes, int edadMinima, int numeroMaxequipos) {
 		
 	}
 	public String estadoEnfrentamiento(Torneo torneo) {
-		
-		return null;
-		
+		return torneo.getEstadoTorneo();
 	}
 	public boolean ResultadoEnfrentamiento(String estado, boolean resultado) {
 		String estadotorn1=EstadoTorneo.APLAZADO+"";
