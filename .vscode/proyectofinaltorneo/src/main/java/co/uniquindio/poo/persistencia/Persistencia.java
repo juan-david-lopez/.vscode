@@ -21,6 +21,9 @@ public class Persistencia implements Serializable{
 	private static final long serialVersionUID = -5483445117312313181L;
 	private ArrayList<Torneo> torneos= new ArrayList<Torneo>();
 	
+	public void agregarTorneo(Torneo torneo1) {
+		torneos.add(torneo1);
+	}
 	public void serialize(String nombreArchivo) throws Exception {
 		FileOutputStream fos = null;
 		ObjectOutputStream oos = null;
@@ -72,4 +75,5 @@ public class Persistencia implements Serializable{
 		miBufferWriter.close();
 		miFileWriter.close();
 	}
+	
 }

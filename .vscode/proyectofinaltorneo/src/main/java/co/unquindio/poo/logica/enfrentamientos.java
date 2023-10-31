@@ -1,26 +1,37 @@
 package co.unquindio.poo.logica;
 
-import java.util.ArrayList;
+import java.time.LocalDate;
 
 public class enfrentamientos {
 	
 	private LogicaGeneral logic;
 	private String nombre;
 	private String ubicacion;
+	private jueces juez;
 	private String horaenfrenta;
-	private String fechaEnfrenta;
+	private LocalDate fechaEnfrenta;
 	private EquipoJugadores equipo1;
 	private EquipoJugadores equipo2;
 	private int puntosEquipo1;
 	private int puntosEquipo2;
 	private String estadoEnfrenta;
 
-	public enfrentamientos(String nombre,String ubicacion,String estadoEnfrenta, EquipoJugadores equipo1,EquipoJugadores equipo2) {
+	public enfrentamientos(String nombre,String ubicacion,String estadoEnfrenta, EquipoJugadores equipo1,EquipoJugadores equipo2,LocalDate fechaEnfrenta,String horaenfrenta,jueces juez ) {
 		this.nombre=nombre;
 		this.ubicacion=ubicacion;
 		this.estadoEnfrenta=estadoEnfrenta;
 		this.equipo1=equipo1;
 		this.equipo2=equipo2;
+		this.estadoEnfrenta=estadoEnfrenta;
+		this.fechaEnfrenta=fechaEnfrenta;
+		this.horaenfrenta=horaenfrenta;
+		this.juez=juez;
+	}
+	public jueces getJuez() {
+		return juez;
+	}
+	public void setJuez1(jueces juez) {
+		this.juez = juez;
 	}
 	public int getPuntosEquipo2() {
 		return puntosEquipo2;
@@ -54,10 +65,10 @@ public class enfrentamientos {
 	public void setEquipo1(EquipoJugadores equipo1) {
 		this.equipo1 = equipo1;
 	}
-	public String getFechaEnfrenta() {
+	public LocalDate getFechaEnfrenta() {
 		return fechaEnfrenta;
 	}
-	public void setFechaEnfrenta(String fechaEnfrenta) {
+	public void setFechaEnfrenta(LocalDate fechaEnfrenta) {
 		this.fechaEnfrenta = fechaEnfrenta;
 	}
 	public EquipoJugadores getEquipo2() {
@@ -95,7 +106,7 @@ public class enfrentamientos {
 	@Override
 	public String toString() {
 		
-		return " :";
+		return " el nombre del equipo es: "+this.getNombre()+" : "+this.getUbicacion()+" : "+this.getEstadoEnfrenta()+" : "+this.getHoraenfrenta();
 		
 	}
 }
