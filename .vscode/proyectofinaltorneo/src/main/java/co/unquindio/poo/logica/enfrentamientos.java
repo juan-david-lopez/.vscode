@@ -106,7 +106,8 @@ public class enfrentamientos {
 	@Override
 	public String toString() {
 		
-		return " el nombre del equipo es: "+this.getNombre()+" : "+this.getUbicacion()+" : "+this.getEstadoEnfrenta()+" : "+this.getHoraenfrenta();
+		return " el nombre del equipo es: "+this.getNombre()+" : "+this.getUbicacion()+" : "+this.getEstadoEnfrenta()+" : "+this.getHoraenfrenta()+" : "+this.getJuez()+" : "+this.getEquipo1()
+		+" : "+this.getEquipo2()+" : "+this.getPuntosEquipo1()+" : "+this.getPuntosEquipo2();
 		
 	}
 }
