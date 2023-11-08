@@ -18,7 +18,7 @@ public class Persistencia implements Serializable{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -5483445117312313181L;
+	private static final long serialVersionUID = 5483445117312313181L;
 	private ArrayList<Torneo> torneos= new ArrayList<Torneo>();
 	
 	public void agregarTorneo(Torneo torneo1) {
@@ -61,7 +61,7 @@ public class Persistencia implements Serializable{
 		FileInputStream fis = new FileInputStream(nombreArchivo);
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		Persistencia data = (Persistencia) ois.readObject();
-		
+		data.guardaR(nombreArchivo);;
 		ois.close();
 		fis.close();
 	}
