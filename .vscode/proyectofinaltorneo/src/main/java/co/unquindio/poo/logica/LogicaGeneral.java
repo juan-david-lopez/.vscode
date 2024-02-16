@@ -3,10 +3,6 @@ package co.unquindio.poo.logica;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Iterator;
-
 import co.uniquindio.poo.persistencia.*;
 
 import co.edu.uniquindio.poo.Enum.EstadoTorneo;
